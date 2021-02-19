@@ -18,7 +18,85 @@
 
 <body>
 
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo.png" alt="">
+            </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="index.html">Accueil</a></li>
+                    <li class="navbar-item"><a href="catalogue.html">Catalogue</a></li>
+                    <li class="navbar-item">
+                        <a class="btn" href="panier.html" id="Panier">
+                            <span id="nbProduct"></span>
+                            <i class="fas fa-shopping-cart"></i>
+                            Votre panier
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <footer class="fixed">
+        <div>
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-balance-scale footer__icon"></i>
+                        <p>Mentions légales</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-user-lock footer__icon"></i>
+                        <p>Protection des données</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cogs footer__icon"></i>
+                        <p>CGV</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cookie footer__icon"></i>
+                        <p>Cookies</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fab fa-twitter-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-facebook footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-pinterest footer__icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     

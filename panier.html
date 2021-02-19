@@ -16,8 +16,156 @@
 
 </head>
 
-<body>
+<body class="min-vh-100">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo.png" alt="">
+            </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="index.html">Accueil</a></li>
+                    <li class="navbar-item"><a href="catalogue.html">Catalogue</a></li>
+                    <li class="navbar-item">
+                        <a class="btn" href="panier.html" id="Panier">
+                            <span id="nbProduct"></span>
+                            <i class="fas fa-shopping-cart"></i>
+                            Votre panier
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main main-aside row">
+        <main class="container table-responsive col-10 col-lg-10 mb-3">
+            <table class="table table-hover bg-white">
+                <h2 class="ml-5 my-3">Résumé des produits dans le panier</h2>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Nom de la l'appareil </th>
+                        <th scope="col">Type de lentille</th>
+                        <th scope="col">Qté</th>
+                        <th scope="col">Prix € TTC</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="resume">
+                    <!-- <tr>
+                        <th scope="row"> 1 </th>
+                        <td> Camera </td>
+                        <td> x300 </td>
+                        <td> 1 </td>
+                        <td> price </td>
+                        <td> throw </td>
+                    </tr> -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Sous Total</td>
+                        <td></td>
+                        <td id="qty"></td>
+                        <td id="subtotal"></td>
+                    </tr>
+
+                </tfoot>
+            </table>
+            <div class="text-center">
+                <a class="btn px-3 btn-add-to-cart" href="confirmation.html"  id="command-confirmed">
+                    <i class="fas fa-shopping-cart mr-2"></i>Commander
+                </a>
+            </div>
+        </main>
+        
+        <!--FORMULAIRE - qui apparaît via JS au clic du bouton "Terminer votre commande"-->
+        <section class="container form justify-content-center" id="form-section">
+            <div class="row">
+                <div class="col-12 jumbotron">
+                    <h2 class="form__title">Pour finaliser votre commande, merci de remplir vos coordonnées.</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">Prénom :</label>
+                            <input type="text" name="firstName" class="form-control" placeholder="Prénom" id="firstName" pattern="[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="lastName">Nom :</label>
+                            <input type="text" name="lastName" class="form-control" placeholder="Nom" id="lastName" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="address">Adresse :</label>
+                            <input type="text" class="form-control" placeholder="123 bld de la liberté" id="address" pattern="[#.0-9a-zA-Z\s,-]+" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ville :</label>
+                            <input type="text" class="form-control" placeholder="Ville" id="city" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required><!--[a-zA-Z0-9 ]*-->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" class="form-control" placeholder="monemail@gmail.com" id="email" required>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="saveInStorage">
+                            <label class="form-check-label text-light" for="saveInStorage">
+                                Enregistrer vos informations.
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn__order form__btn" id="contact-submited" data-toggle="modal" onclick="window.location.href = 'confirmationCommande.html';">Valider votre commande</button>
+                        </div>                            
+                    </form>
+                    <div id="prevent-msg" class="text-center mt-2 mb-0">
+
+                        <p>Merci de sélectionner des articles avant de remplir ce formulaire !</p>
+                        <button type="button" class="btn btn-secondary btn__buy prevent-msg__btn modal__link" onclick="window.location.href = 'index.html';">Reprendre vos achats</button>
+                        <button type="button" class="btn btn-secondary btn__cart prevent-msg__btn modal__link" onclick="window.location.href = 'panier.html';">Retourner au panier</button>
+                     </div>
+                </div>
+            </div>
+        </section>    
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline footer__div text-center">
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-balance-scale footer__icon"></i>
+                                <p>Mentions légales</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-user-lock footer__icon"></i>
+                                <p>Protection des données</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-cogs footer__icon"></i>
+                                <p>CGV</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-cookie footer__icon"></i>
+                                <p>Cookies</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

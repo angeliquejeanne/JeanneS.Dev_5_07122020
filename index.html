@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="min-vh-100 ">
+
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html">
@@ -42,57 +43,78 @@
         </nav>
     </header>
 
-    
+    <div class="main main-aside row">
+        <main class="container mt-5 col-12 col-lg-10">
+            <article class="jumbotron text-center">
+                <h1 class="accueil__title">ORICAMERA<br/>Boutique 100% en ligne</h1>
+                <div class="accueil__description">
+                    <h2>La plus belle chose que vous pouvez partager, toutes vos émotions en photo. </h2>
+                    <h2>Les plus beaux appareils vintages sont ici, venez découvrir ces merveilles dans notre boutique.</h2>
+                    <q>Lorsque vous vous servez d'un appareil photo, non pas comme d'une machine, 
+                        <br>
+                    mais comme le prolongement de votre cœur, vous ne faites plus qu'un avec votre sujet.</q>
+                </div>
+            </article>
 
-    <footer class="fixed">
-        <div>
-            <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#">
-                        <i class="fas fa-balance-scale footer__icon"></i>
-                        <p>Mentions légales</p>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#">
-                        <i class="fas fa-user-lock footer__icon"></i>
-                        <p>Protection des données</p>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#">
-                        <i class="fas fa-cogs footer__icon"></i>
-                        <p>CGV</p>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#">
-                        <i class="fas fa-cookie footer__icon"></i>
-                        <p>Cookies</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#">
-                        <i class="fab fa-twitter-square footer__icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#"><i class="fab fa-facebook footer__icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item footer__item zoom">
-                    <a href="#"><i class="fab fa-pinterest footer__icon"></i>
-                    </a>
-                </li>
-            </ul>
+            <article class="mb-3">
+                <h2>Nos cameras</h2>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input class="form-control" id="searchInput" type="text" placeholder="Recherchez la camera dont vous rêvez...">
+                    </div>
+                </div>
+
+                <div id="camCard" class="row justify-content-center">
+                    <section class="col-12 col-md-6 col-md-4 card ">
+                        <img class="card-img-top shadow-sm" src="img/vcam_1.jpg"></img>
+                        <div class="card-body">
+                            <a class="stretched-link" href="#">
+                                <h3 class="card-title">Nom du l'appareil</h3>
+                                <span class="btn-price p-1">Prix €</span>
+                            </a>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit minus omnis amet ut at ex, ipsa odio error atque! Repellendus voluptatibus neque temporibus laboriosam quaerat explicabo adipisci blanditiis est animi!</p> 
+                            </div>
+                        </div>
+                    </section>              
+                </div>
+            </article>
+        </main>
+
+    </div>
+
+    <footer id="footer" class="footer mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline footer__div text-center">
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-balance-scale footer__icon"></i>
+                                <p>Mentions légales</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-user-lock footer__icon"></i>
+                                <p>Protection des données</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-cogs footer__icon"></i>
+                                <p>CGV</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer__item zoom">
+                            <a href="#">
+                                <i class="fas fa-cookie footer__icon"></i>
+                                <p>Cookies</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

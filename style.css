@@ -12,6 +12,11 @@ body {
     background-size: cover;
     position: relative;
 }
+header {
+    max-height: 80px;
+    width: 100%;
+    
+}
 header nav {
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -25,6 +30,7 @@ header #navbarContent {
 .navbar-item {
     margin: 0 10px;
 }
+
 #navbarContent ul li a {
     color: black;
     font-weight: 700;
@@ -34,6 +40,35 @@ header #navbarContent {
     border: 2px solid black;
     background-color: lightgrey;
 }
+.items {
+    margin: 0 10px;
+    text-align: center;
+  }
+  /* Sous liste 1 */
+  
+  .sous-liste {
+    position: relative;
+    display: none;
+    
+  }
+  .items-sous-liste {
+    list-style-type: none;
+    word-break: break-word;
+    text-align: center;
+    padding: 0 10px;
+    border-bottom: 1px solid black;
+  }
+  .items-sous-liste:hover {
+    background:rgb(175, 130, 88);
+  }
+  .items-sous-liste:nth-child(3) {
+    height: 50px;
+  }
+  .items:hover > ul {
+    display: block;
+  }
+
+
 .main {
     margin-top: 6rem;
     margin-bottom: 7rem;

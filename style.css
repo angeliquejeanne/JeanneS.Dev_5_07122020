@@ -26,9 +26,11 @@ header nav img {
 }
 header #navbarContent {
     justify-content: space-around;
+    max-height: 80px;
 }
 .navbar-item {
-    margin: 0 10px;
+    margin: auto 10px;
+    max-height: 80px;
 }
 
 #navbarContent ul li a {
@@ -41,7 +43,14 @@ header #navbarContent {
     background-color: lightgrey;
 }
 .items {
-    margin: 0 10px;
+    margin: auto 10px;
+    text-align: center;
+    
+    color: black;
+    font-weight: 700;
+  }
+  .items:hover {
+    margin: 80px 10px;
     text-align: center;
   }
   /* Sous liste 1 */
@@ -49,14 +58,15 @@ header #navbarContent {
   .sous-liste {
     position: relative;
     display: none;
-    
   }
   .items-sous-liste {
+    height: 40px;
     list-style-type: none;
     word-break: break-word;
     text-align: center;
     padding: 0 10px;
     border-bottom: 1px solid black;
+    margin: 0;
   }
   .items-sous-liste:hover {
     background:rgb(175, 130, 88);

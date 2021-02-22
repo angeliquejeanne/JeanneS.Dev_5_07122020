@@ -13,7 +13,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
-    
+    <style>
+        main .produit__content {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0px auto 20px;
+  background-color: rgba(255, 250, 250, 0.5);
+  color: black;
+}
+
+main .produit__content img {
+  max-width: 800px;
+  max-height: 450px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .produit__content h2, main .produit__content p {
+  margin: 20px 0;
+  font-weight: 600;
+  margin: 0px auto 15px 15px;
+}
+
+main .produit__content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0px auto 15px 15px;
+}
+main .produit__content form {
+    margin: 0px auto 15px 15px;
+}
+ main .produit__content form select {
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  margin-left: 20px;
+  width: 100px;
+}
+main .produit__content button {
+    margin: 0px auto 15px 15px;
+    font-weight: 600;
+}
+
+    </style>
 </head>
 
 <body class="min-vh-100">
@@ -53,160 +96,26 @@
         </nav>
     </header>
 
-    <div class="main main-aside row .min-vh-80">
-        <main class="container mt-5 col-12 col-lg-10">
-            <div class="row mt-3">
-
-                <section class="col-12 card">
-                    <div class="card-body d-md-flex">
-                        <img class="imgCam float-left shadow-sm col-12 col-md-6 mt-2" src="img/vcam_1.jpg" alt="Cam1"/>
-                        <div class="card-text">
-                            <h2 class="nameCam card-title ml-3">Zurss 50S</h2> 
-                            <span class="priceCam btn-price p-1 ml-3">499 €</span>
-                            <div class="form-group mt-2  ml-3">
-                                <label>Choix de la lentille
-                                    <select class="form-control objectif" id="objectif">
-                                        <option disabled selected>Choisissez votre lentille</option>
-                                        <option value="0">35mm 1.4</option>
-                                        <option value="1">50mm 1.6</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="quantity">Quantité</label>
-                                <input type="number" name="quantity" id="quantity" min="1" max="10">
-                            </div>
-                            <input type="hidden" name="id" id="id" value="5be1ed3f1c9d44000030b06">
-                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
-                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
-
-                                <a class="btn btn-back" href="/">Retour à l'accueil</a>
-                        </div>    
-                    </div>        
-                    <p class="descCam mx-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
-
-                <section class="col-12 card mt-2">
-                    <div class="card-body d-md-flex">
-                        <img class="imgCam float-left shadow-sm col-12 col-md-6 mt-2" src="img/vcam_2.jpg" alt="Cam1"/>
-                        <div class="card-text">
-                            <h2 class="nameCam card-title ml-3">Hirsch 400DTS</h2> 
-                            <span class="priceCam btn-price p-1 ml-3">3099 €</span>
-                            <div class="form-group mt-2  ml-3">
-                                <label>Choix de la lentille
-                                    <select class="form-control objectif">
-                                        <option disabled selected>Choisissez votre lentille</option>
-                                        <option value="0">50mm 1.8</option>
-                                        <option value="1">60mm 2.8</option>
-                                        <option value="2">24-60mm 2.8/4.5</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="quantity">Quantité</label>
-                                <input type="number" name="quantity" id="quantity" min="1" max="10">
-                            </div>
-                            <input type="hidden" name="id" id="id" value="5be1ef211c9d44000030b062">
-                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
-                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
-                                <a class="btn btn-back" href="/">Retour à l'accueil</a>
-                        </div>   
-                    </div>        
-                    <p class="descCam mx-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
-
-                <section class="col-12 card mt-2">
-                    <div class="card-body d-md-flex">
-                        <img class="imgCam float-left shadow-sm col-12 col-md-6 mt-2" src="img/vcam_3.jpg" alt="Cam1"/>
-                        <div class="card-text">
-                            <h2 class="nameCam card-title ml-3">Franck JS 105</h2> 
-                            <span class="priceCam btn-price p-1 ml-3">2099 €</span>
-                            <div class="form-group mt-2  ml-3">
-                                <label>Choix de la lentille
-                                    <select class="form-control objectif">
-                                        <option disabled selected>Choisissez votre lentille</option>
-                                        <option value="0">25mm 4.5</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="quantity">Quantité</label>
-                                <input type="number" name="quantity" id="quantity" min="1" max="10">
-                            </div>
-                            <input type="hidden" name="id" id="id" value="5be9bc241c9d440000a730e">
-                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
-                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
-                                <a class="btn btn-back" href="/">Retour à l'accueil</a>
-                        </div>    
-                    </div>        
-                    <p class="descCam mx-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
-
-                <section class="col-12 card mt-2">
-                    <div class="card-body d-md-flex">
-                        <img class="imgCam float-left shadow-sm col-12 col-md-6 mt-2" src="img/vcam_4.jpg" alt="Cam1"/>
-                        <div class="card-text">
-                            <h2 class="nameCam card-title ml-3">Kuros TTS</h2> 
-                            <span class="priceCam btn-price p-1 ml-3">1599 €</span>
-                            <div class="form-group mt-2  ml-3">
-                                <label>Choix de la lentille
-                                    <select class="form-control objectif">
-                                        <option disabled selected>Choisissez votre lentille</option>
-                                        <option value="0">50mm 1.7</option>
-                                        <option value="1">35mm 1.4</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="quantity">Quantité</label>
-                                <input type="number" name="quantity" id="quantity" min="1" max="10">
-                            </div>
-                            <input type="hidden" name="id" id="id" value="5be9c4471c9d440000a730e8">
-                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
-                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
-                                <a class="btn btn-back" href="/">Retour à l'accueil</a>
-                        </div>    
-                    </div>        
-                    <p class="descCam mx-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
-
-                <section class="col-12 card mt-2">
-                    <div class="card-body d-md-flex">
-                        <img class="imgCam float-left shadow-sm col-12 col-md-6 mt-2" src="img/vcam_5.jpg" alt="Katatone"/>
-                        <div class="card-text">
-                            <h2 class="nameCam card-title ml-3">Katatone</h2> 
-                            <span class="priceCam btn-price p-1 ml-3">599 €</span>
-                            <div class="form-group mt-2  ml-3">
-                                <label>Choix de la lentille
-                                    <select class="form-control objectif">
-                                        <option disabled selected>Choisissez votre lentille</option>
-                                        <option value="0">50mm 1.4</option>
-                                        <option value="1">35mm 1.8</option>
-                                        <option value="2">28-200mm 2.8/4.5</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="quantity">Quantité</label>
-                                <input type="number" name="quantity" id="quantity" min="1" max="10">
-                            </div>
-                            <input type="hidden" name="id" id="id" value="5be9c4c71c9d440000a730e9">
-                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
-                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
-                                <a class="btn btn-back" href="/">Retour à l'accueil</a>
-                        </div>    
-                    </div>        
-                    <p class="descCam mx-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
+    <main >
+        
+        <div class="container mt-5 col-12 col-lg-10">
+            <div class="produit__content"> 
+                <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="Zurss 50S">
+                <h2>Nom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <form>
+                    <label for="select">Choix de lentille: </label>
+                    <select id="select">
+                        <option value="35mm 1.4">35mm 1.4</option>
+                        <option value="50mm 1.6">50mm 1.6</option>
+                    </select>
+                </form>
+                <p>Prix</p>
+                <button class="btn bouttonAjoutPanier">Ajout au Panier</button>
             </div>
-        </main>
-
-    </div>
+        </div>
+    
+    </main>
 
     <footer id="footer" class="footer">
         <div class="container">
@@ -248,8 +157,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="catalogue.js"></script>
-    <script>
  
-    </script>
 </body>
 </html>

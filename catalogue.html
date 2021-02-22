@@ -7,66 +7,17 @@
 
     <title>Oricamera</title>
     <meta name="description" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
-    <link rel="shortcut icon" type="image/png" href="img/ori-fav.png">
+    <link rel="shortcut icon" type="png" href="img/ori-fav.png">
 
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="style.css">
-    <style>
-main .produit__content {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 0px auto 20px;
-  background-color: rgba(255, 250, 250, 0.5);
-  color: black;
-  border-radius: 20px;
-  border: 3px solid #000;
-}
+    <link rel="stylesheet" href="css/style.css">
 
-main .produit__content img {
-    display: block;
-    max-width: 500px;
-    max-height: 300px;
-    min-height: 235px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    margin: 10px auto;
-    border: 3px solid black;
-}
-
-main .produit__content h2, main .produit__content p {
-  margin: 20px 0;
-  font-weight: 600;
-  margin: 0px auto 15px 15px;
-}
-
-main .produit__content h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0px auto 15px 15px;
-}
-main .produit__content form {
-    margin: 0px auto 15px 15px;
-}
- main .produit__content form select {
-  border-radius: 5px;
-  border: none;
-  height: 20px;
-  margin-left: 20px;
-  width: 100px;
-}
-main .produit__content button {
-    margin: 0px auto 15px 15px;
-    font-weight: 600;
-}
-
-    </style>
 </head>
 
-<body class="min-vh-100">
+<body class="min-vh-100 ">
+
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html">
@@ -84,8 +35,8 @@ main .produit__content button {
                     
                     <li class="navbar-item">
                         <a class="btn" href="panier.html" id="Panier">
-                            <span id="nbProduit" class="nbrProduit vide">0</span>
-                            <i class="fas fa-shopping-catalogue"></i>
+                            <span id="nbProduit"></span>
+                            <i class="fas fa-shopping-cart"></i>
                             Votre panier
                         </a>
                     </li>
@@ -103,13 +54,15 @@ main .produit__content button {
         </nav>
     </header>
 
+    
     <main >
         
-        <div class="container mt-5 col-12 col-lg-10c justify-content-center">
+        <div class="container">
             <div class="produit__content"> 
-                <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="Zurss 50S">
+
+                <!-- <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="Zurss 50S">
                 <h2>Nom</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ceci est un test d'affichage de la carte produit.</p>
                 <form>
                     <label for="select">Choix de lentille: </label>
                     <select id="select">
@@ -118,13 +71,16 @@ main .produit__content button {
                     </select>
                 </form>
                 <p>Prix</p>
-                <button class="btn bouttonAjoutPanier">Ajout au Panier</button>
+                <button class=" btn bouttonAjoutPanier">Ajout au Panier</button> -->
+
             </div>
+
+            
         </div>
     
     </main>
 
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer mb-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -163,7 +119,7 @@ main .produit__content button {
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="catalogue.js"></script>
- 
+
+    <script src="./script/catalogue.js"></script>
 </body>
 </html>

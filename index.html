@@ -13,6 +13,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
+<style>
+.cardCam .card {
+  display: grid;
+  grid-template-columns: repeat (1fr, 1fr);
+  grid-gap: 2rem;
+  text-align: center;
+  max-width: 600px;
+  height: max-content;
+  margin: 0px auto 20px;
+  background: transparent;
+}
+
+.cardCam .card figure {
+    background-color: rgba(255, 250, 250, 0.2);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    
+  border: 3px solid black;
+}
+
+.cardCam .card figure img {
+  max-width: 500px;
+  max-height: 300px;
+  min-height: 235px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid black;
+}
+
+.cardCam .card  figure figcaption {
+  line-height: 2rem;
+}
+
+.cardCam .card  figure figcaption a, .cardCam .card  figure figcaption p {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000;
+  font-weight: 600;
+}
+
+.cardCam .card  figure figcaption a:hover {
+  color: #f1f1f1;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+</style>    
 </head>
 
 <body class="min-vh-100 ">
@@ -68,30 +122,18 @@
                 </div>
             </article>
 
-            <article class="mb-3">
-                <h2>Nos cameras</h2>
-                <div class="row mb-3">
-                    <div class="col">
-                        <input class="form-control" id="searchInput" type="text" placeholder="Recherchez la camera dont vous rêvez...">
+            <article class="cardCam" id="cardCam">
+                <h2 class="message text-center">Nos cameras</h2>
+
+                <div id="camCard">
+
+                    <div class="card" id="card">
+                        
                     </div>
+                
+
                 </div>
 
-                <div id="camCard" class="row justify-content-center">
-                   <section class="col-12 col-md-6 col-md-4 card">
-
-                        <div class="card-body">
-                            <img class="card-img-top shadow-sm" src="img/vcam_1.jpg" alt="camera1"/>
-
-                            <a class="stretched-link" href="catalogue.html">
-                                <h3 class="card-title">Zurss 50S</h3>
-                                <span class="btn-price p-1">499 €</span>
-                            </a>
-                            <div class="card-text">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit minus omnis amet ut at ex, ipsa odio error atque! Repellendus voluptatibus neque temporibus laboriosam quaerat explicabo adipisci blanditiis est animi!</p> 
-                            </div>
-                        </div>
-                    </section>           
-                </div>
             </article>
         </main>
 
@@ -138,8 +180,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script src="script/index.js"></script>
-    <script>
 
-    </script>
 </body>
 </html>

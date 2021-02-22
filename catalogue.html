@@ -34,8 +34,8 @@
                     
                     <li class="navbar-item">
                         <a class="btn" href="panier.html" id="Panier">
-                            <span id="nbProduit"></span>
-                            <i class="fas fa-shopping-cart"></i>
+                            <span id="nbProduit" class="nbrProduit vide">0</span>
+                            <i class="fas fa-shopping-catalogue"></i>
                             Votre panier
                         </a>
                     </li>
@@ -65,7 +65,7 @@
                             <span class="priceCam btn-price p-1 ml-3">499 €</span>
                             <div class="form-group mt-2  ml-3">
                                 <label>Choix de la lentille
-                                    <select class="form-control objectif">
+                                    <select class="form-control objectif" id="objectif">
                                         <option disabled selected>Choisissez votre lentille</option>
                                         <option value="0">35mm 1.4</option>
                                         <option value="1">50mm 1.6</option>
@@ -77,8 +77,9 @@
                                 <input type="number" name="quantity" id="quantity" min="1" max="10">
                             </div>
                             <input type="hidden" name="id" id="id" value="5be1ed3f1c9d44000030b06">
-                            <button class="btn btn-primary ml-3 btn-add-to-cart" type="submit">
-                                <i class="fas fa-shopping-cart"></i>Ajouter au panier</button> 
+                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
+                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
+
                                 <a class="btn btn-back" href="/">Retour à l'accueil</a>
                         </div>    
                     </div>        
@@ -107,8 +108,8 @@
                                 <input type="number" name="quantity" id="quantity" min="1" max="10">
                             </div>
                             <input type="hidden" name="id" id="id" value="5be1ef211c9d44000030b062">
-                            <button class="btn btn-primary ml-3 btn-add-to-cart" type="submit">
-                                <i class="fas fa-shopping-cart"></i>Ajouter au panier</button> 
+                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
+                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
                                 <a class="btn btn-back" href="/">Retour à l'accueil</a>
                         </div>   
                     </div>        
@@ -135,8 +136,8 @@
                                 <input type="number" name="quantity" id="quantity" min="1" max="10">
                             </div>
                             <input type="hidden" name="id" id="id" value="5be9bc241c9d440000a730e">
-                            <button class="btn btn-primary ml-3 btn-add-to-cart" type="submit">
-                                <i class="fas fa-shopping-cart"></i>Ajouter au panier</button> 
+                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
+                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
                                 <a class="btn btn-back" href="/">Retour à l'accueil</a>
                         </div>    
                     </div>        
@@ -164,8 +165,8 @@
                                 <input type="number" name="quantity" id="quantity" min="1" max="10">
                             </div>
                             <input type="hidden" name="id" id="id" value="5be9c4471c9d440000a730e8">
-                            <button class="btn btn-primary ml-3 btn-add-to-cart" type="submit">
-                                <i class="fas fa-shopping-cart"></i>Ajouter au panier</button> 
+                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
+                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
                                 <a class="btn btn-back" href="/">Retour à l'accueil</a>
                         </div>    
                     </div>        
@@ -194,8 +195,8 @@
                                 <input type="number" name="quantity" id="quantity" min="1" max="10">
                             </div>
                             <input type="hidden" name="id" id="id" value="5be9c4c71c9d440000a730e9">
-                            <button class="btn btn-primary ml-3 btn-add-to-cart" type="submit">
-                                <i class="fas fa-shopping-cart"></i>Ajouter au panier</button> 
+                            <button class="btn btn-primary ml-3 btn-add-to-catalogue" type="submit">
+                                <i class="fas fa-shopping-catalogue"></i>Ajouter au panier</button> 
                                 <a class="btn btn-back" href="/">Retour à l'accueil</a>
                         </div>    
                     </div>        
@@ -246,6 +247,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
+    <script>
+ 
+    </script>
 </body>
 </html>

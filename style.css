@@ -150,3 +150,55 @@ transition: transform .2s ease, -webkit-transform .2s ease;
         font-size: .8rem;
     }
 }
+
+.cardCam .card {
+    display: grid;
+    grid-template-columns: repeat (1fr, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    max-width: 600px;
+    height: max-content;
+    margin: 0px auto 20px;
+    background: transparent;
+  }
+  
+  .cardCam .card section {
+      background-color: rgba(255, 250, 250, 0.2);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      
+    border: 3px solid black;
+  }
+  
+  .cardCam .card section img {
+    max-width: 500px;
+    max-height: 300px;
+    min-height: 235px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+  }
+  
+  .cardCam .card  section div {
+    line-height: 2rem;
+  }
+  
+  .cardCam .card  section div a, .cardCam .card  section div p {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  .cardCam .card  section div a:hover {
+    color: #f1f1f1;
+    background-color: #000000;
+    border-radius: 5px;
+  }

@@ -53,13 +53,18 @@ header #navbarContent {
   /* Sous liste 1 */
   
   .sous-liste {
+    position: relative;
     display: none;
   }
   .items-sous-liste {
+    height: 40px;
     list-style-type: none;
+    word-break: break-word;
+    text-align: center;
     padding: 0 10px;
+    border-bottom: 1px solid black;
     margin: 0;
-    width: 120px;
+    position: relative;
   }
   .items-sous-liste:hover {
     background:rgb(175, 130, 88);
@@ -67,7 +72,13 @@ header #navbarContent {
   .items-sous-liste:nth-child(3) {
     height: 50px;
   }
- 
+  .items:hover > ul {
+    display: block;
+  }
+.dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
 
 
 .main {

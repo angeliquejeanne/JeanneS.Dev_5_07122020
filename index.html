@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Oricamera</title>
-    <meta name="description" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
-    <link rel="shortcut icon" type="png" href="img/ori-fav.png">
+    <meta name="p" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
+    <link rel="shortcut icon" type="image/png" href="./img/ori-fav.png">
 
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
-   
+  
 </head>
 
 <body class="min-vh-100 ">
 
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+            
             <a class="navbar-brand" href="index.html">
 
                 <img src="./img/logo.png" alt="Oricamera le logo" width="200">
@@ -32,8 +33,13 @@
 
             <div id="navbarContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li class="navbar-item"><a href="index.html">Accueil</a></li>
-                    <li class="navbar-item"><a href="catalogue.html">Catalogue</a></li>
+                    <li class="navbar-item">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    
+                    <li class="navbar-item">
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
                     
                     <li class="navbar-item">
                         <a class="btn" href="panier.html" id="Panier">
@@ -60,7 +66,10 @@
         <main class="container mt-5 col-12 col-lg-10">
             <article class="jumbotron text-center">
                 <h1 class="accueil__title">ORICAMERA<br/>Boutique 100% en ligne</h1>
-                <div class="accueil__description">
+                
+                <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="appareil photo">
+                
+                <div class="accueil__p">
                     <h2>La plus belle chose que vous pouvez partager, toutes vos émotions en photo. </h2>
                     <h2>Les plus beaux appareils vintages sont ici, venez découvrir ces merveilles dans notre boutique.</h2>
                     <q>Lorsque vous vous servez d'un appareil photo, non pas comme d'une machine, 
@@ -69,14 +78,13 @@
                 </div>
             </article>
 
-            <article class="cardCam" id="cardCam">
+            <article class="cardCam" id="cardCam catalogue">
                 <h2 class="message text-center">Nos cameras</h2>
 
                 <div id="camCard">
 
                     <div class="card" id="card">
-
-                      <!-- <section class="col-12 col-md-6 col-lg-3 card">
+                      <section class="col-12 col-md-6 col-lg-3 card">
                         <a href="">
                           <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="appareil photo">
                         </a>
@@ -85,7 +93,7 @@
                           <h3>Prix</h3>
                           <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum adipisci et, illum culpa fugiat voluptas.</p>
                         </div>
-                      </section> -->
+                      </section>
                         
                     </div>
                 
@@ -138,8 +146,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script src="script/index.js"></script>
-    <script>
 
-    </script>
 </body>
 </html>

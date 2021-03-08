@@ -377,7 +377,7 @@
 /* style carte produit page catalogue */
 main .produit__content .testAffichage {
   width: 100%;
-  margin: 100px auto 25px;
+  margin: 120px auto 25px;
   padding: 0px auto 20px;
   background-color: rgba(255, 250, 250, 0.5);
   color: black;

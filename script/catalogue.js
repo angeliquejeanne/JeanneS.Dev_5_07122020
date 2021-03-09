@@ -76,7 +76,9 @@ function choixLentille(response) {
         
         formulaireOption.setAttribute('value', response.lenses[i]);
         formulaireSelection.appendChild(formulaireOption);
-        formulaireSelection.style.backgroundColor = ('yellow');
+        formulaireSelection.style.backgroundColor = ('lightgray');
+        formulaireSelection.style.borderColor = ('black');
+        formulaireOption.style.backgroundColor = ('#d2c3b1');
     };
     formulaire.appendChild(formulaireLabel);
     formulaire.appendChild(formulaireSelection);
@@ -113,6 +115,7 @@ function ajoutPanier(response) {
         const messageValidationAjoutPanier = document.createElement('p');
         messageValidationAjoutPanier.textContent = produit.name + ' Produit ajouter à votre panier!'
         messageValidationAjoutPanier.style.color = 'black';
+        messageValidationAjoutPanier.style.fontSize = '1.2rem';
         messageValidationAjoutPanier.style.backgroundColor = 'snow';
         messageValidationAjoutPanier.style.textAlign = 'center';
         messageValidationAjoutPanier.style.marginRight = '15px';
@@ -131,7 +134,7 @@ function majLocalStorage(cameraAjoutée, produit) {
     for (let i in cameraAjoutée) {
         // Vérifier si l'ID est déjà présent, si oui ajouter +1 en quantité
         if (cameraAjoutée[i].id === produit.id) {
-            cameraAjoutée[i].quantity + 1;
+            cameraAjoutée[i].quantity += 1;
             enrDsLocalStorage(cameraAjoutée);
             checkId = true;
         }

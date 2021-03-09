@@ -53,94 +53,56 @@
         </nav>
     </header>
 
-    <div class="main main-aside row">
-        <main class="container table-responsive col-10 col-lg-10 mb-3">
-            <h2 class="ml-5 my-3">Résumé des produits dans le panier</h2>
-            <table class="table table-hover bg-white">
-                
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Nom de la l'appareil </th>
-                        <th scope="col">Type de lentille</th>
-                        <th scope="col">Qté</th>
-                        <th scope="col">Prix € TTC</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody id="resume">
-                    <tr>
-                        <th scope="row"> 1 </th>
-                        <td> Camera </td>
-                        <td> x300 </td>
-                        <td> 1 </td>
-                        <td> price </td>
-                        <td> throw </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>Sous Total</td>
-                        <td></td>
-                        <td id="qty">1</td>
-                        <td id="subtotal">00</td>
-                        <td></td>
-                    </tr>
-                </tfoot>
-            </table>
-            <div class="text-center">
-                <a class="btn px-3 btn-add-to-cart" href="confirmationCommande.html"  id="command-confirmed">
-                    <i class="fas fa-shopping-cart mr-2"></i>Commander
-                </a>
-            </div>
-        </main>
-        
-        
-        <section class="container form justify-content-center" id="form-section">
-            <div class="row">
-                <div class="col-12 jumbotron">
-                    <h2 class="form__title">Pour finaliser votre commande, merci de remplir vos coordonnées.</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="firstName">Prénom :</label>
-                            <input type="text" name="firstName" class="form-control" placeholder="Prénom" id="firstName" pattern="[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
-                        </div>
-                         <div class="form-group">
-                            <label for="lastName">Nom :</label>
-                            <input type="text" name="lastName" class="form-control" placeholder="Nom" id="lastName" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required>
-                        </div>
-                         <div class="form-group">
-                            <label for="address">Adresse :</label>
-                            <input type="text" class="form-control" placeholder="123 bld de la liberté" id="address" pattern="[#.0-9a-zA-Z\s,-]+" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="city">Ville :</label>
-                            <input type="text" class="form-control" placeholder="Ville" id="city" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required><!--[a-zA-Z0-9 ]*-->
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email :</label>
-                            <input type="email" name="email" class="form-control" placeholder="monemail@gmail.com" id="email" required>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="saveInStorage">
-                            <label class="form-check-label text-light" for="saveInStorage">
-                                Enregistrer vos informations.
-                            </label>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn__order form__btn" id="contact-submited" data-toggle="modal" onclick="window.location.href = 'confirmationCommande.html';">Valider votre commande</button>
-                        </div>                            
-                    </form>
-                    <div id="prevent-msg" class="text-center mt-2 mb-0">
+    <div class="main">      
+        <main class="container table-responsive text-center">                   
 
-                        <p>Merci de sélectionner des articles avant de remplir ce formulaire !</p>
-                        <button type="button" class="btn btn-secondary btn__buy prevent-msg__btn modal__link" onclick="window.location.href = 'catalogue.html';">Reprendre vos achats</button>
-                        <button type="button" class="btn btn-secondary btn__cart prevent-msg__btn modal__link" onclick="window.location.href = 'panier.html';">Retourner au panier</button>
-                     </div>
+            <div class="panier container col">
+
+                <h2 id="panierTitle" class="ml-5 my-3 text-light"></h2>
+                <div id="panierContent" class="content bg-light">
+    
                 </div>
             </div>
-        </section>    
+
+            <div class="button container">
+            </div>
+
+            <div class="row">
+                <form class="col-12 jumbotron form container">
+                    <fieldset id="contactForm">
+                            <legend>Pour finaliser votre commande, merci de remplir vos coordonnées.</legend>
+
+                            <div class="form-group">
+                                <label for="firstName">Prénom :</label>
+                                <input type="text" name="firstName" class="form-control" placeholder="Prénom" id="firstName" pattern="[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="lastName">Nom :</label>
+                                <input type="text" name="lastName" class="form-control" placeholder="Nom" id="lastName" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="address">Adresse :</label>
+                                <input type="text" class="form-control" placeholder="123 bld de la liberté" id="address" pattern="[#.0-9a-zA-Z\s,-]+" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Ville :</label>
+                                <input type="text" class="form-control" placeholder="Ville" id="city" pattern="[A-Za-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿñÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÐÒÓÔÕÖÙÚÛÜÝŸÑ -]+" required>
+                                <!--[a-zA-Z0-9 ]*-->
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" name="email" class="form-control" placeholder="monemail@gmail.com" id="email" required>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn__order form__btn submit" id="contact-submited" data-toggle="modal" >Valider votre commande</button>
+                            </div>                            
+                    </fieldset>
+                </form>
+            </div>
+
+        </main>
+           
     </div>
 
     <footer id="footer" class="footer">
@@ -182,6 +144,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
- 
+    <script src="panier.js"></script>
 </body>
 </html>

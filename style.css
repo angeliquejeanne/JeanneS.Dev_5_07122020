@@ -376,16 +376,24 @@
 /* style carte produit page catalogue */
 main .produit__content .testAffichage {
   width: 100%;
-  margin: 100px auto 25px;
+  margin: 120px auto 25px;
   padding: 0px auto 20px;
   background-color: rgba(255, 250, 250, 0.5);
   color: black;
   border-radius: 20px;
   border: 3px solid #000;
 }
+main .produit__content .testAffichage h2 {
+  font-family: 'Smythe', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+main .produit__content .testAffichage p {
+  font-family: 'Yesteryear', cursive;
+  font-size: 1.4rem;
+}
 main .produit__content .testAffichage h2, main .produit__content .testAffichage p {
   margin: 20px 0;
-  font-weight: 600;
   margin: 0px auto 15px 15px;
 }
 main .produit__content .testAffichage img {
@@ -399,9 +407,10 @@ main .produit__content .testAffichage img {
 }
 main .produit__content .testAffichage h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 0px auto 15px 15px;
+  font-family: 'Yesteryear', cursive;
 }
 main .produit__content .testAffichage form {
   margin: 0px auto 15px 15px;
@@ -422,6 +431,10 @@ main .produit__content .testAffichage form select {
   border: 3px solid black;
   padding: 1px;
 }
+main .produit__content .testAffichage form select option {
+  background-color: #d2c3b1;
+}
+
 main .produit__content .testAffichage button {
   margin: 0px auto 15px 15px;
   font-weight: 600;
@@ -430,10 +443,11 @@ main .produit__content .testAffichage button {
   background-color: lightgrey;
   padding: 5px;
   border-radius: 5px;
+  font-family: 'Smythe', cursive;
 }
 main .produit__content .testAffichage button:hover {
-  color: black;
-  background-color: yellow;
+  color: lightgrey;
+  background-color: black;
 }
 
 
@@ -455,9 +469,16 @@ main .produit__content .content__produit img {
   margin: 5px auto 15px;
   border: 3px solid black;
 }
+main .produit__content .content__produit h2 {
+  font-family: 'Smythe', cursive;
+  font-weight: 600;
+}
+main .produit__content .content__produit p {
+  font-family: 'Yesteryear', cursive;
+  font-size: 1.4rem;
+}
 main .produit__content .content__produit h2, main .produit__content .content__produit p {
   margin: 20px 0;
-  font-weight: 600;
   margin: 0px auto 15px 15px;
 }
 main .produit__content .content__produit h3 {
@@ -485,6 +506,9 @@ main .produit__content .content__produit form select {
   border: 3px solid black;
   padding: 1px;
 }
+/* Ajouter via le JS ** main .produit__content .content__produit form select option {
+  background-color: #d2c3b1;
+} */
 main .produit__content .content__produit button {
   margin: 0px auto 15px 15px;
   font-weight: 600;

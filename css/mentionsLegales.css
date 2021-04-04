@@ -1,0 +1,42 @@
+
+.body {
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    margin: 120px auto;
+    padding: 0 100px;
+}
+.container h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    color: #000;
+    text-transform: uppercase;
+}
+.container h2 {
+    font-size: 1.9rem;
+    color: darkgrey;
+    font-weight: bold;
+}
+.container p {
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
+    color: snow;
+    margin: 20px auto;
+    font-weight: normal;
+}
+.container a {
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container span {
+    color: #000;
+    font-weight: bold;
+}
+hr {
+    border: 2px solid black!important;
+}
+

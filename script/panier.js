@@ -383,18 +383,22 @@ function afficherLaConfirmation(response) {
 
     let confirmHeader = document.createElement('h2');
     confirmHeader.textContent = 'Nous vous remercions de votre commande!';
+    confirmHeader.style.marginTop = '50px';
 
     let confirmMessage = document.createElement('p');
     confirmMessage.textContent = 'Vous trouverez ci-dessous votre numéro de commande qui est également envoyé à votre adresse e-mail.';
+    confirmMessage.style.marginTop = '25px';
 
     let orderId = document.createElement('span');
     orderId.textContent = 'orderID: ' + response.orderId;
+    orderId.style.marginTop = '50px';
 
     let itemList = document.createElement('ul');
     for (let i in orderedCameras) {
         let orderedItem = document.createElement('li');
         orderedItem.textContent = orderedCameras[i].quantity + ' x ' + orderedCameras[i].name + ' ' + orderedCameras[i].lense;
         itemList.appendChild(orderedItem);
+        itemList.style.marginTop = '25px';
     }
 
     let confirmPriceSum = ObtentionPrixTotal();
@@ -411,9 +415,31 @@ function afficherLaConfirmation(response) {
 function ajouterLesElementsDeConfirmation(confirmContainer, confirmHeader, confirmMessage, orderId, itemList, confirmPrice) {
     let mainContainer = document.querySelector('main');
     confirmContainer.appendChild(confirmHeader);
+    confirmHeader.style.color = 'black';
+    confirmHeader.style.fontSize = '2rem';
+    
     confirmContainer.appendChild(confirmMessage);
+    confirmMessage.style.color = 'black';
+    confirmMessage.style.fontSize = '1.2rem';
+
     confirmContainer.appendChild(orderId);
+    orderId.style.borderBottom = '3px solid snow';
+    orderId.style.color = 'black';
+    orderId.style.fontSize = '1.4rem';
+
     confirmContainer.appendChild(itemList)
+    itemList.style.color = 'black';
+    itemList.style.fontSize = '1.2rem';
+
     confirmContainer.appendChild(confirmPrice);
+    confirmPrice.style.borderBottom = '3px solid snow';
+    confirmPrice.style.color = 'black';
+    confirmPrice.style.fontSize = '1.4rem';
+
     mainContainer.appendChild(confirmContainer);
+    confirmContainer.style.border = '3px solid snow';
+    confirmContainer.style.marginTop = '25px';
+    confirmContainer.style.marginBottom = '25px';
+    confirmContainer.style.height = '30vh';
+
 };

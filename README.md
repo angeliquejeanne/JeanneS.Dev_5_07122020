@@ -2,7 +2,7 @@
 
 Il s'agit du serveur Front-End pour le projet 5 du parcours Développeur Web.
 
-### Prerequis ###
+### Près requis ###
 
 Vous devez avoir Node et npm installés localement sur votre machine.
 Pour cela clonez le dépot https://github.com/OpenClassrooms-Student-Center/JWDP5.git qui est la partie Back-End.

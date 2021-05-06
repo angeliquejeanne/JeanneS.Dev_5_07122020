@@ -101,7 +101,7 @@
 
   /* début du footer = dans chaque pages */
   #footer {
-    margin-top:auto;
+    /* margin-top:auto; */
     padding: 10px auto;
     left: 0;
     bottom: 0;
@@ -174,7 +174,7 @@
 }
 .jumbotron {
     background-color: rgba(255, 250, 250, 0.3);
-    max-height: 100vh;
+    min-height: 100vh;
     border-radius: 20px;
     border: 4px solid rgb(190, 177, 161);
 }
@@ -373,7 +373,7 @@
 }
 
 
-/* style carte produit page catalogue */
+/* style carte produit page catalogue partie test */
 main .produit__content .testAffichage {
   width: 100%;
   margin: 120px auto 25px;
@@ -450,10 +450,10 @@ main .produit__content .testAffichage button:hover {
   background-color: black;
 }
 
-
+/* style carte produit page catalogue */
 main .produit__content .content__produit{
   /* max-width: 1000px; */
-  margin: 25px auto;
+  margin: 120px auto;
   padding: 0px auto 20px;
   background-color: rgba(255, 250, 250, 0.5);
   color: black;
@@ -535,7 +535,7 @@ main .produit__content .content__produit button:hover {
 
 /* style du panier */
 button {
-  margin: 0px auto 15px 15px;
+  margin: 0px auto;
   font-weight: 600;
   color: black;
   border: 3px solid black;
@@ -544,6 +544,33 @@ button {
   border-radius: 5px;
 }
 button:hover{  
-  color: snow;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  .panier {
+    margin: 50px auto;
+  }
+  .panier #panierTitle {
+    font-size: 1.8rem;
+    margin: 120px auto;
+  }
+  #panierContent .cart-item{
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+  #panierContent .cart-item img{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  #panierContent .cart-item .btnSupprimeProduit {
+    margin: 10px auto;
+  }
+  #panierContent .cart-item .quantite-container {
+    margin: 10px auto;
+  }
+  #panierContent .cart-item h3 {
+    font-size: 1.2rem;
+  }
 }

@@ -437,9 +437,10 @@ function ajouterLesElementsDeConfirmation(confirmContainer, confirmHeader, confi
     confirmPrice.style.fontSize = '1.4rem';
 
     mainContainer.appendChild(confirmContainer);
-    confirmContainer.style.border = '3px solid snow';
     confirmContainer.style.marginTop = '25px';
     confirmContainer.style.marginBottom = '25px';
-    confirmContainer.style.height = '30vh';
+    confirmContainer.style.height = '80vh';
+    confirmContainer.style.backgroundColor = 'rgba(255, 250, 250, 0.3)';
+    confirmContainer.style.border = '2px solid snow';
 
 };

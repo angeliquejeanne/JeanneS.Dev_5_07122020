@@ -29,18 +29,10 @@
 
 <p align="center">
     <a href="https://anggiie.github.io/Simonangelique_5_07122020/" style="text-decoration: none;">
-        <img src="./capt/homeMobile.png" width="400" alt="Workout Life Home Page"/>
+        <img src="./capt/homeMobile.png" width="400" alt="Oricamera home page"/>
     </a>
     <a href="https://anggiie.github.io/Simonangelique_5_07122020/" style="margin-left: 20px; text-decoration: none;">
-        <img src="./capt/homeMobileBgMenuOpen.png" width="400" alt="Workout Life Home Page"/>
-    </a>
-</p>
-    <p align="center">
-    <a href="https://anggiie.github.io/Simonangelique_5_07122020/" style="text-decoration: none;">
-        <img src="./capt/homeMobile.png" width="400" alt="Workout Life Home Page"/>
-    </a>
-    <a href="https://anggiie.github.io/Simonangelique_5_07122020/" style="margin-left: 20px; text-decoration: none;">
-        <img src="./capt/homeMobileBgMenuOpen.png" width="400" alt="Workout Life Home Page"/>
+        <img src="./capt/homeMobileBgMenuOpen.png" width="400" alt="Oricamera home page"/>
     </a>
 </p>
 

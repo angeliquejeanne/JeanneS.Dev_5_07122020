@@ -54,13 +54,29 @@
     <ul style="list-style: none;"">
         <li> - Index / Accueil </li>
         <li> - Index / Accueil version mobile </li> 
-        <li>- Catalogue </li>
-        <li>- Catalogue version mobile </li>
-        <li>- Panier / Formulaire / Confirmation </li>
-        <li>- Panier / Formulaire / Confirmation version mobile </li>
-        <li>- Nos boutiques (Oribears / Oriwoods) page error </li>
-        <li>- Nos boutiques (Oribears / Oriwoods) page errorNos boutiques (Oribears / Oriwoods) page error version mobile </li>
+        <li> - Catalogue </li>
+        <li> - Catalogue version mobile </li>
+        <li> - Panier / Formulaire / Confirmation </li>
+        <li> - Panier / Formulaire / Confirmation version mobile </li>
+        <li> - Nos boutiques (Oribears / Oriwoods) page error </li>
+        <li> - Nos boutiques (Oribears / Oriwoods) page errorNos boutiques (Oribears / Oriwoods) page error version mobile </li>
     </ul> 
+</div>
+<br>
+<div style="font-size: 20px; color: #a89274; text-align: center; margin: 0 auto; width: 1000px">
+    <h3>Architecture du projet</h3>
+    <ul style="list-style: none;"">
+        <li> - index.html </li>
+        <li> - panier.html </li> 
+        <li> - catalogue.html </li>
+        <li> - Dossier -> css </li>
+        <li> - Dossier -> script </li>
+        <li> - Dossier -> links </li>
+        <li> - Dossier -> img </li>
+        <li> - Dossier -> docs </li>
+        <li> - Dossier -> capt </li>
+    </ul> 
+    <h3>Les autres fichiers & dossiers sont ceux issue du repository d'OpenClassrooms pour la partie BackEnd</h3>
 </div>
 <br>
 <div style="font-size: 20px; color: #a89274; text-align: center; margin: 0 auto; width: 1000px">

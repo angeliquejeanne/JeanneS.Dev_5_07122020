@@ -1,4 +1,5 @@
 // Le contenu du panier : les boutons, la validation et la confirmation sont générer à l'intérieur de panier.js quand au 
+// éléments du formulaires ils sont créés à l'intérieur du panier.html.
 
 // Déclaration de variables en dehors de la portée de la fonction
 let carteProduit = JSON.parse(localStorage.getItem('cameraAjoutée'));
@@ -19,7 +20,7 @@ const prixTotal = document.createElement('p');
 function afficheLeContenuDuPanier() {
     if (localStorage.getItem('cameraAjoutée') != null) {
         panierTitle.textContent = 'Résumé des produits dans le panier';
-
+        panierTitle.style.fontSize = '2rem';
         // Afficher le bouton Effacer le panier
         afficheLeBtnVidePanier();
         // Afficher le prix total
@@ -49,6 +50,7 @@ function afficheLeContenuDuPanier() {
     } else {
         // Définir l'en-tête du panier lorsque le panier est vide
         panierTitle.textContent = 'Votre panier est vide !';
+        panierTitle.style.fontSize = '2rem';
     };
 };
 
@@ -260,7 +262,7 @@ for (let i in formInputs) {
     formInputs[i].addEventListener('blur', () => {
         if (formInputs[i].value == "") {
             validations[i] = false;
-            formInputs[i].style.border = 'medium solid #da9898';
+            formInputs[i].style.border = 'medium solid red';
         } else {
             formInputs[i].style.border = 'none';
             validations[i] = true;
@@ -272,7 +274,7 @@ for (let i in formInputs) {
 email.addEventListener('blur', () => {
     if (email.value == "" || !emailRegex.test(email.value)) {
         emailValid = false;
-        email.style.border = 'medium solid #da9898';
+        email.style.border = 'medium solid red';
     } else {
         emailValid = true;
         email.style.border = 'none';
@@ -285,12 +287,12 @@ submitBtn.addEventListener('click', (event) => {
 
     for (let i in formInputs) {
         if (formInputs[i].value == "") {
-            formInputs[i].style.border = 'medium solid #da9898';
+            formInputs[i].style.border = 'medium solid red';
         }
     }
 
     if (email.value == "") {
-        email.style.border = 'medium solid #da9898';
+        email.style.border = 'medium solid red';
     } else if (!emailRegex.test(email.value)) {
         alert('Please use a correct Email');
     }
@@ -383,7 +385,7 @@ function afficherLaConfirmation(response) {
 
     let confirmHeader = document.createElement('h2');
     confirmHeader.textContent = 'Nous vous remercions de votre commande!';
-    confirmHeader.style.marginTop = '50px';
+    confirmHeader.style.marginTop = '20px';
 
     let confirmMessage = document.createElement('p');
     confirmMessage.textContent = 'Vous trouverez ci-dessous votre numéro de commande qui est également envoyé à votre adresse e-mail.';
@@ -430,6 +432,7 @@ function ajouterLesElementsDeConfirmation(confirmContainer, confirmHeader, confi
     confirmContainer.appendChild(itemList)
     itemList.style.color = 'black';
     itemList.style.fontSize = '1.2rem';
+    itemList.style.listStyleType = 'none';
 
     confirmContainer.appendChild(confirmPrice);
     confirmPrice.style.borderBottom = '3px solid snow';
@@ -439,8 +442,8 @@ function ajouterLesElementsDeConfirmation(confirmContainer, confirmHeader, confi
     mainContainer.appendChild(confirmContainer);
     confirmContainer.style.marginTop = '25px';
     confirmContainer.style.marginBottom = '25px';
-    confirmContainer.style.height = '80vh';
     confirmContainer.style.backgroundColor = 'rgba(255, 250, 250, 0.3)';
     confirmContainer.style.border = '2px solid snow';
+    confirmContainer.style.paddingBottom = '20px';
 
 };

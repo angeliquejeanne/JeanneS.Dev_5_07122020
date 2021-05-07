@@ -22,7 +22,7 @@ function actionRequete() {
       const reponseDePromesse = await demandeDePromesse;
       creationSectionProduits(reponseDePromesse);
     } catch (error) {
-      document.querySelector('.cardCam .card').innerHTML = '<h3>' + erreur + '</h3>';
+      document.querySelector('.cardCam .card').innerHTML = '<h3>' + error + '</h3>';
     }
   };
   

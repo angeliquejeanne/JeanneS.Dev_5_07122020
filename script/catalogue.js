@@ -37,7 +37,6 @@ async function obtentionInfoProduit() {
 };
 obtentionInfoProduit();
 
-
 // Creation du contenu de la page catalogue
 function creationInfoProduit(response) {
     const sourceImg  = response.imageUrl;

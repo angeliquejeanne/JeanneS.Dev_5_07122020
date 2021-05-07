@@ -38,7 +38,7 @@
       filter: sepia(95%);
   }
   header #navbarContent {
-      justify-content: right;
+      justify-content: flex-end;
       max-height: 100%;
       margin: 10px auto;
   }
@@ -102,7 +102,7 @@
   /* début du footer = dans chaque pages */
   #footer {
     /* margin-top:auto; */
-    padding: 10px auto;
+    padding: 5px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -174,7 +174,6 @@
 }
 .jumbotron {
     background-color: rgba(255, 250, 250, 0.3);
-    min-height: 100vh;
     border-radius: 20px;
     border: 4px solid rgb(190, 177, 161);
 }
@@ -201,7 +200,11 @@
     background-color: lightgrey;
     border: 1px solid black;
 }
+
 @media screen and (min-width:320px) {
+.row {
+  margin: 0 ;
+}
 .main {
     margin-top: 3rem;
     margin-bottom: 8rem;
@@ -215,7 +218,7 @@
 }
 .jumbotron .accueil__p h2 {
   font-size: 1.2rem;
-  font-weight: 600px;
+  font-weight: 600;
 }
 .jumbotron .accueil__p q {
   font-size: .8rem;
@@ -244,7 +247,7 @@
 }
 .jumbotron .accueil__p h2 {
   font-size: 1.4rem;
-  font-weight: 600px;
+  font-weight: 600;
 }
 .jumbotron .accueil__p q {
   font-size: 1rem;
@@ -275,7 +278,7 @@
   }
   .jumbotron .accueil__p h2 {
     font-size: 1.7rem;
-    font-weight: 600px;
+    font-weight: 600;
   }
 }
 @media screen and (min-width:1280px) {
@@ -285,10 +288,9 @@
   }
   .jumbotron .accueil__p h2 {
     font-size: 2rem;
-    font-weight: 600px;
+    font-weight: 600;
   }
 }
-
 
 /* style carte produit page accueil */
 #camCard {
@@ -312,8 +314,10 @@
   max-width: 100%;
   height: 100%;
   margin: 0px auto 20px;
-  background: transparent;
-  border: none;
+  background-color: rgba(255, 250, 250, 0);
+  color: black;
+  border-radius: 20px;
+  border: transparent;
 }
 .cardCam .card section {
   max-width: 1200px;
@@ -377,7 +381,7 @@
 main .produit__content .testAffichage {
   width: 100%;
   margin: 120px auto 25px;
-  padding: 0px auto 20px;
+  padding: 0px 0px 20px;
   background-color: rgba(255, 250, 250, 0.5);
   color: black;
   border-radius: 20px;
@@ -454,7 +458,7 @@ main .produit__content .testAffichage button:hover {
 main .produit__content .content__produit{
   /* max-width: 1000px; */
   margin: 120px auto;
-  padding: 0px auto 20px;
+  padding: 0px 0px 20px;
   background-color: rgba(255, 250, 250, 0.5);
   color: black;
   border-radius: 20px;
@@ -552,7 +556,7 @@ button:hover{
     margin: 50px auto;
   }
   .panier #panierTitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 120px auto;
   }
   #panierContent .cart-item{
